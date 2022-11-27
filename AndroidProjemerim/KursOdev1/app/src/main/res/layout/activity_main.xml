@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textSonuc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textSayi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Enter Number1"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textSayi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Number2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSayi1" />
+
+    <Button
+        android:id="@+id/btnTopla"
+        android:layout_width="99dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="topla"
+        android:text="Topla"
+        app:layout_constraintEnd_toStartOf="@+id/btnCikarma"
+        app:layout_constraintTop_toBottomOf="@+id/textSayi2" />
+
+    <Button
+        android:id="@+id/btnCikarma"
+        android:layout_width="110dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        android:onClick="cikarma"
+        android:text="Çıkarma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSayi2" />
+
+    <Button
+        android:id="@+id/btnCarpma"
+        android:layout_width="109dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="carpma"
+        android:text="Çarpma"
+        app:layout_constraintEnd_toStartOf="@+id/btnBolme"
+        app:layout_constraintTop_toBottomOf="@+id/btnTopla" />
+
+    <Button
+        android:id="@+id/btnBolme"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:onClick="bolme"
+        android:text="Bölme"
+        app:layout_constraintTop_toBottomOf="@+id/btnCikarma"
+        tools:layout_editor_absoluteX="256dp" />
+
+    <TextView
+        android:id="@+id/textSonuc"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="30dp"
+        android:text="Sonuc:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBolme" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

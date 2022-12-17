@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitEkraniActivity">
+
+    <TextView
+        android:id="@+id/txtBaslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Yeni Hesap oluştur"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/TxtKullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı"
+        android:layout_below="@id/txtBaslik"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TxtKullaniciAdi"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Kullanıcı Adı Girin"></EditText>
+    <TextView
+        android:id="@+id/Sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parola"
+        android:layout_below="@id/txtUserName"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtParola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sifre"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Parolayı Girin">
+
+    </EditText>
+    <TextView
+        android:id="@+id/reParola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parolayı Tekrar Girin"
+        android:layout_below="@id/txtParola"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtRepassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reParola"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Parolayı Tekrar Girin"></EditText>
+
+    <Button
+        android:id="@+id/BtnYeniHesapEkle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtRepassword"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Hesap Oluştur"></Button>
+
+
+</RelativeLayout>
